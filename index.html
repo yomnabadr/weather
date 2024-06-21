@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="js/index.js">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg ">
+        <div class="container">
+            <a class="branding d-flex" href="#">
+                <img src="images/logo.png" class="logo" alt="logo">
+                <div class="logo-contant">
+                    <h1 class="logo-title">weather</h1>
+                    <small class="site-desc">tagline goes here</small>
+                </div>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <ul class="navbar-nav ms-auto mb-4 mb-lg-0">
+                <li class="nav-link">
+                    <a class=" current-menu-item " aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-link"><a href="/">News</a></li>
+                <li class="nav-link"><a href="/">Live cameras </a></li>
+                <li class="nav-link"><a href="/">Photos</a></li>
+                <li class="nav-link"><a href="/">Contact</a></li>
+
+
+            </ul>
+
+        </div>
+        </div>
+    </nav>
+
+
+    <div class="hero">
+        <div class="continer">
+            <form class="find-location">
+                <input type="text" placeholder="Find yor location..." id="search">
+                <input type="button" value="Find" id="submit">
+            </form>
+        </div>
+        <div class="container mt-4">
+            <div class="row align-items-center" id="forecast">
+                <div class="col-md-4">
+                    <div class="card p-4 rounded-4 text-light mb-md-0 mb-2 shadow">
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <span id="todayWeekDayHtml">Today</span>
+                            <span id="dateToday"> 9 June</span>
+                        </div>
+                        <div>
+                            <span id="cityToday"> london</span>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="temp display-1 fw-bold d-block" id="tempToday">24</span>
+                            <img class="icon" id="imgToday" src="" alt="">
+                        </div>
+                        <div>
+                            <span class="condition mt-2" id="todaycond"> clear</span>
+                        </div>
+
+                        <div class="icons d-flex justify-content-between align-items-center mt-2">
+                            <div>
+                                <img src="images/icon-umberella.png" alt="umberella">
+                                <span id="humidityToday"> 20</span>
+                            </div>
+                            <div>
+                                <img src="images/icon-wind.png" alt="wind">
+                                <span id="windspeedToday"> 20</span>
+                            </div>
+                            <div>
+                                <img src="images/icon-compass.png" alt="compass">
+                                <span id="compassToday"> 20</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card p-4 rounded-4 text-light mb-md-0 mb-2 shadow">
+                        <div>
+                            <span id="tomorrowDay"> tomerow </span>
+                        </div>
+                        <div>
+                            <img class="my-2" src="" id="iconTomorrow" alt="">
+                            <span class="fs-4 fw-bold d-block mb-2" id="maxtemp"> 70 </span>
+                            <span class="d-block mb-2 " id="mintemp"> 80</span>
+                        </div>
+                        <div>
+                            <span id="tcond"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card p-4 rounded-4 text-light mb-md-0 mb-2 shadow">
+                        <div>
+                            <span id="afterTomerrow"> after</span>
+                        </div>
+                        <div>
+                            <img class="icon2" src="" id="iconAfter" alt="">
+                            <span class="fs-4 fw-bold d-block mb-2" id="aftermaxtemp"> 70</span>
+                            <span class="d-block mb-2 " id="aftermintemp"> 80</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="forecast-table">
+
+    </div>
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <form action="#" class="sub-form">
+                        <input type="text" placeholder="Enter your email to subscribe">
+                        <input type="submit" value="Subscribe">
+                    </form>
+                </div>
+                <div class="col-md-3">
+                    <div class="social-links">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-google-plus"></i></a>
+                        <a href="#"> <i class="fa-brands fa-pinterest"></i></a>
+                    </div>
+                </div>
+                <p>Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+            </div>
+        </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
