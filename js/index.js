@@ -22,6 +22,7 @@ displayTodayWeather(data)
 displayTomerrow(data)
 displayAfter(data)
 
+
 }
 
 searchinput.addEventListener("input" , function(){
